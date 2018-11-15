@@ -20,9 +20,9 @@ int minDistance(int dist[], int path[])
 
 int sol(int dist[], int n)
 {
-   printf("Vertex   Distance from Source\n");
+   cout<<"\n\nVertex Distance from Source\n\n";
    for (int i = 0; i < V; i++)
-      printf("%d tt %d\n", i, dist[i]);
+      cout<<i<<"\t\t"<<dist[i]<<endl;
 }
 
 
