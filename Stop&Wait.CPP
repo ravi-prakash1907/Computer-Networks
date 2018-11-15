@@ -72,6 +72,8 @@ void main()
      reciever();
    }
 
+ getch();
+ clrscr();
    cout<<"\n\nTRANSMISSION COMPLETE";
 
  getch();
