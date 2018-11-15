@@ -1,4 +1,4 @@
-/*		Stop & Wait: ERROR FREE		*/
+/*		Stop & Wait		*/
 
 #include<iostream.h>
 #include<string.h>
