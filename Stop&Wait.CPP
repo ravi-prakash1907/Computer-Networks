@@ -3,6 +3,7 @@
 #include<iostream.h>
 #include<string.h>
 #include<stdio.h>
+#include<stdlib.h>
 #include<conio.h>
 #include<dos.h>
 
@@ -30,9 +31,7 @@ class frame
 };
 
 frame DATA;
-typedef enum{frame_arrival,err,timeout,no_event} event_type;
-
-//typedef enum{ frameRecieved, blanck } event_type;
+typedef enum{frameRecieved,err,timeout,no_event} event_type;
 
 void frmNetworkLayer(packet *);
 void toNetworkLayer(packet *);
@@ -176,10 +175,8 @@ void toNetworkLayer(packet *buffer)
 {
  cout<<"   |   RECIEVER: Packet \'"<<(*buffer).data<<"\' recieved , Ack Sent\n";
  if(i>totalPackets)
-   //connectionStatus = 0;    //old
-   /*   new     */
    {
-        connectionStatus = 1;
+        connectionStatus = 0;
         cout<<"\nDISCONNECTED";
    }
 }
